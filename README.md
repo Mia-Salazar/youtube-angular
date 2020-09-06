@@ -1,4 +1,4 @@
-# Project with Youtube videos
+# Project with Youtube's videos
 
 > An app that displays videos from a profile of Youtube, made with Angular, Javascript, SASS, Bootstrap4, CSS3 and HTML5, using Youtube API
 
