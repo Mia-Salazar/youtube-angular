@@ -1,0 +1,22 @@
+.card-body p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.hero {
+    height: 400px;
+    background-image: url('https://c10.patreonusercontent.com/3/eyJ3IjoxOTIwfQ%3D%3D/patreon-media/p/campaign/755990/8bedfaec925c439fb7b447aa18703841/2.png?token-time=1601769600&token-hash=xcthM3xZCB8UEmrGFi4WPMOCohG3yLW__Jo5F72BS24%3D');
+    background-position: center;;
+}
+
+.btn.btn-danger{
+    background-color: #640000;
+}
+
+.card-img {
+    height: 100%;
+    object-fit: cover;
+}

@@ -1,1 +1,36 @@
-<p>home works!</p>
+<section>
+    <div class="hero mb-5"> </div>
+    <div class="container pb-5">
+        <div class="row">
+            <article class="col-12 col-md-6 p-4" *ngFor="let video of videos">
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                      <div class="col-md-4">
+                        <img [src]="video.thumbnails.high.url" class="card-img" alt="">
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">{{video.title}}</h5>
+                            <p class="card-text">{{video.description}}</p>
+                            <div class="d-flex justify-content-between">
+                                <button class="btn btn-secondary" (click)="showVideo(video.resourceId.videoId)">Wacth video here</button>
+                                <a href="https://www.youtube.com/watch?v={{video.resourceId.videoId}}" class="btn btn-danger" target="_blank">Go to video</a>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </article>
+    
+        </div>
+        <div class="jumbotron jumbotron-fluid p-4">
+            <div class="container">
+              <h2 class="display-4">Want to see more?</h2>
+              <button class="btn btn-danger" (click)="getVideos()">Load more</button>
+            </div>
+          </div>
+        
+    </div>
+
+
+</section>
